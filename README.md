@@ -4,7 +4,7 @@ Code to train a feedforward nnet with MATLAB. There are two scripts:
 - **initMyNetwork.m**
 - **nnet_script.m**
 
-**initMyNetwork.m** is a function that will initialize a feed forward neural network according the parameters you provide it.
+**initMyNetwork.m** is a function that will initialize a feed forward neural network according the parameters of the network size (layers and nodes) you provide it.
 
 ```
 % defines a 2-layer neural network, with 3 nodes in the first layer, and 2 in the second.
@@ -20,4 +20,4 @@ trainFcn = 'trainscg';
 **nnet_script.m** is an example script that shows how to (1) define the neural network, (2) train it, and (3) evaluate it.
 
 ### Additional Details
-Cost function, node transform, training split, epochs, etc. are all hard-coded within **initMyNetwork.m**.
+Cost function (mse), node transform (tansig), output layer (softmax), training split, epochs, etc. are all hard-coded within **initMyNetwork.m**.
